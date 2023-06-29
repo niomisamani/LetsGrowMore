@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f5f5ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+.titlename {
+    font-size: 40px;
+    font-weight: 700;
+    color: rgb(8, 6, 133);
+    letter-spacing: 1px;
+    margin: 30px, 0;
+}
+
+.todolist {
+    width: 450px;
+    padding: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0,0, 0.1);
+    border-radius: 12px;
+    background-color: #fff;
+}
+
+.listhead {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap:20px;
+}
+
+.enteredlist {
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    font-size: 18px;
+    outline: none;
+}
+
+.addlist {
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(8, 6, 133);
+    outline: none;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    opacity: .6;
+    pointer-events: none;
+    transition: background-color 0.3s, color 0.3s, border 0.3s; 
+}
+
+.addlist.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.addlist:hover {
+    background-color: whitesmoke;
+    color: rgb(8, 6, 133);
+    border: 3px solid rgb(8, 6, 133);
+}
+
+.tasks {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.item {
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 10px 30px rgba(0, 0,0, 0.1);
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item p {
+    font-size: 16px;
+    font-weight: 450;
+    color: #111;
+    letter-spacing: 1px;
+}
+
+.item.completed p {
+    text-decoration: line-through;
+    color: #11111180;
+}
+
+.itembtn {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.itembtn i {
+    color: rgb(8, 6, 133);
+    font-size: 16px;
+    cursor: pointer;
+}
